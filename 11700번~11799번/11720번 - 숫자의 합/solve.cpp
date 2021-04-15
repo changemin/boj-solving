@@ -28,8 +28,7 @@ int main() {
     int sum = 0;
     cin >> n >> p;
     for(int i = 0; i < p.size(); i++) {
-        sum += static_cast<int>(p[i]);
-        cout << static_cast<int>(p[i])-48 << endl;
+        sum += static_cast<int>(p[i])-48;
     }
     cout << sum << endl;
 }
