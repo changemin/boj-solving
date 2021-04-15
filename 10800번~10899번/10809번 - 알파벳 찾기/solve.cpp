@@ -26,9 +26,10 @@ int getFirstIdx(string s, char c);
 int main() {
     string s;
     cin >> s;
-    for(int i = 1; i <= 'z'-'a'+1; i ++) {
-        cout << getFirstIdx(s, static_cast<char>(i+48)) << " ";
-        // getFirstIdx(s, i+48);
+    int alphabet[26] = {};
+    
+    for(int i = 0; i <= 'z'-'a'; i ++) {
+        cout << getFirstIdx(s, i+97) << " ";
     }
 }
 
